@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.about {
+  margin-top: rem(40);
+  padding-bottom: rem(75);
+  @include mq('md') {
+    margin-top: rem(120);
+  }
+}
+
+.about__section__header {
+  margin-bottom: rem(26);
+  @include mq('md') {
+    margin-bottom: rem(40);
+  }
+}
+
+.about__contents {
+  margin-bottom: rem(40);
+  @include mq('md') {
+    position: relative;
+  }
+}
+
+.about__contents::after {
+  @include mq('md') {
+    content: "";
+    display: block;
+    background-image: url('../images/common/about_sea-anemone.png');
+    background-size: contain;
+    width: rem(194);
+    height: rem(181);
+    position: absolute;
+    bottom: rem(-91);
+    right: rem(-96);
+  }
+}
+
+.about__bg {
+  max-width: rem(375);
+  height: rem(492);
+  background-image: url('../images/common/about_1.jpg'), url('../images/common/about_2.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 0%, 100% 8.46905537%;
+  background-size: rem(128) ,rem(281);
+  margin: 0 auto;
+  @include mq('md') {
+    max-width: rem(1080);
+    background-size: rem(400), rem(880);
+    height: rem(661);
+    background-position: left top, right bottom;
+  }
+}
+
+.about__sentences {
+  padding-top: rem(252);
+  margin-bottom: rem(50);
+  @include mq('md') {
+    padding-top: rem(200);
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.about__maintext {
+  font-size: rem(40);
+  font-family: $en-base-font-family;
+  color: $color-gr;
+  line-height: 1;
+  margin-bottom: rem(16);
+  @include mq('md') {
+    font-size: rem(80);
+    line-height: calc(rem(100) / rem(80));
+    color: $color-wh;
+    margin-right: rem(40);
+    margin-bottom: 0;
+  }
+}
+
+.about__text__wrap {
+  display: flex;
+  flex-direction: column;
+  @include mq('md') {
+    margin-right: rem(40);
+  }
+}
+
+.about__text {
+  font-size: rem(16);
+  line-height: calc(rem(24) / rem(16));
+  margin-bottom: rem(50);
+  @include mq('md') {
+    color: $color-wh;
+    max-width: rem(400);
+    margin-bottom: rem(40);
+  }
+}

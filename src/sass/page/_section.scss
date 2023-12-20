@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.section__inner {
+  padding: 0 rem(15);
+  @include mq('md') {
+    padding: 0 rem(180);
+  }
+}

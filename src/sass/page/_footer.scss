@@ -1,0 +1,145 @@
+@use "global" as *;
+
+.footer {
+  padding: rem(48) rem(15) rem(56);
+  background: $color-gr;
+  @include mq('md') {
+    padding: rem(80) rem(180);
+  }
+}
+
+.footer__head {
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(7);
+  }
+}
+
+.footer__head a img{
+  width: rem(120);
+  @include mq('md') {
+    width: rem(200);
+  }
+}
+
+.footer__logo {
+  margin-bottom: rem(16);
+}
+
+.footer__sns {
+  display: flex;
+  margin-bottom: rem(40);
+  @include mq('md') {
+    margin-left: rem(40);
+    margin-bottom: 0;
+  }
+}
+
+.footer__facebook {
+  width: rem(22);
+  margin-right: rem(18);
+  @include mq('md') {
+    width: rem(32);
+  }
+}
+
+.footer__instagram {
+  width: rem(22);
+  @include mq('md') {
+    width: rem(32);
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+  @include mq('md') {
+    margin-bottom: rem(32);
+  }
+}
+
+.footer__nav-left, .footer__nav-right {
+    @include mq('md') {
+      display: flex;
+      justify-content: flex-start;
+      gap: rem(120);
+      width: 100%;
+  }
+}
+
+.footer__nav-right {
+  @include mq('md') {
+    margin-left: rem(26);    
+  }
+}
+
+.footer__nav__group {
+  margin-bottom: rem(32);
+}
+
+.footer__nav__head {
+  margin-bottom: rem(12);
+}
+
+.footer__nav__head::before {
+  content: '';
+  display: inline-block;
+  background: url(../images/common/footer_starfish.png) no-repeat;
+  background-size: contain;
+  width: rem(18);
+  height: rem(18);
+  margin-right: rem(4);
+}
+
+.footer__nav__head a {
+  font-size: rem(16);
+  font-weight: $bold;
+  //line-height: calc(rem(18) / rem(16));
+  line-height: 1.225;
+  color: $color-wh;
+  display: inline-block;
+  vertical-align: top;
+  @include mq('md') {
+    transition: all .3s ease;
+  }
+}
+
+.footer__nav__head a:hover {
+  @include mq('md') {
+    opacity: .7;
+  }
+}
+
+.footer__nav__body li a {
+  font-size: rem(16);
+  line-height: 2.49;
+  color: $color-wh;
+  padding-left: rem(26);
+  @include mq('md') {
+    transition: all .3s ease;
+  }
+}
+
+.footer__nav__body li a:hover {
+  @include mq('md') {
+    opacity: .7;
+  }
+}
+
+.footer__copy {
+  text-align: center;
+}
+
+.footer__copy small {
+  font-size: rem(12);
+  line-height: calc(rem(18) / rem(12));
+  font-family: $en-base-font-family;
+  font-weight: $regular;
+  color: $color-wh;
+  letter-spacing: -0.05px;
+  @include mq('md') {
+    font-size: rem(14);
+    line-height: calc(rem(18) / rem(14));
+  }
+}

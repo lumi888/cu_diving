@@ -1,0 +1,127 @@
+@use "global" as *;
+
+.blog {
+  padding: rem(75) 0 rem(84);
+  @include mq('md') {
+    padding: rem(100) 0 rem(20);
+    position: relative;
+  }
+}
+
+.blog::before {
+  @include mq('md') {
+    content: "";
+    background-image: url('../images/common/blog_bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: rem(500);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.blog::after {
+  @include mq('md') {
+    content: "";
+    background-image: url('../images/common/blog_fish.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: rem(437);
+    height: 100%;
+    top: rem(24);
+    left: rem(100);
+  }
+}
+
+.blog__header {
+  margin-bottom: rem(24);
+  @include mq('md') {
+    margin-bottom: rem(80);
+  }
+}
+
+.blog__title-w {
+  @include mq('md') {
+    color: $color-wh;
+  }
+}
+
+.blog__accent {
+  @include mq('md') {
+    color: $color-wh;
+  }
+}
+
+.blog__subtitle-w {
+  @include mq('md') {
+    color: $color-wh;
+  }
+}
+
+.blog__cards {
+  @include mq('md') {
+    display: flex;
+    gap: rem(40);
+    margin-bottom: rem(40);
+  }
+}
+
+.blog__card {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: rem(32);
+  background: #fff;
+}
+
+
+.blog__card__aside {
+  padding: rem(16) rem(16) 0;
+  
+}
+
+.blog__card__body {
+  padding: rem(24) rem(24);
+}
+
+.blog__card__header {
+  position: relative;
+  padding-bottom: rem(4);
+}
+
+.blog__card__header::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-radius: rem(50);
+  background: $color-gr;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blog_card__date {
+  font-size: rem(12);
+  line-height: calc(rem(18) / rem(12));
+}
+
+.blog__card__title {
+  font-size: rem(16);
+  line-height: calc(rem(24) / rem(16));
+  font-weight: $bold;
+}
+
+.blog__card__footer {
+  padding: rem(16) 0 0;
+}
+
+.blog__card__description {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: rem(16);
+  line-height: calc(rem(24) / rem(16));
+}

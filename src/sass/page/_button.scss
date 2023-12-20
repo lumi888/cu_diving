@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.button__wrap {
+  text-align: center;
+  padding-bottom: rem(5);
+}
+
+.button{
+  color: $color-wh;
+  background: $color-gr;
+  border: rem(1) solid $color-gr;
+  font-size: rem(14);
+  font-family: $en-base-font-family;
+  line-height: calc(rem(22) / rem(14));
+  width: rem(202);
+  height: rem(54);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+//左から右スライダーアニメーション
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.3s transform;
+  background: $color-wh;
+  z-index: -1;
+}
+
+.button:hover{
+  color: $color-gr;
+}
+
+
+//ずらした枠
+.button::after {
+  content: '';
+  position: absolute;
+  top: rem(4);
+  left: rem(4);
+  width: rem(202);
+  height: rem(54);
+  border: rem(1) solid $color-gr;
+  background: transparent;
+  z-index: -2;
+}
+
+//矢印横棒
+.button__arrow {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(40);
+  height: rem(1);
+  background: $color-wh;
+  margin-left: rem(8);
+  position: relative;
+}
+
+
+//矢印方向
+.button__arrow::after {
+  content: '';
+  display: block;
+  width: rem(10);
+  height: rem(1);
+  transform: rotate(45deg);
+  background: $color-wh;
+  position: absolute;
+  top: calc(50% - rem(4));
+  right: 0;
+  border-radius: rem(5);
+  transition: 0.3s background-color;
+}
+
+.button:hover .button__arrow,
+.button:hover .button__arrow::after {
+  background-color: $color-gr;
+}
+
+.button:hover::before{
+  transform: scale(1, 1);
+}

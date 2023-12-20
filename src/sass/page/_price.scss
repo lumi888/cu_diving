@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.price {
+  padding: rem(80) 0;
+  background: $color-lgr;
+  @include mq('md') {
+    padding: rem(100) 0;
+    position: relative;
+  }
+}
+
+.price::after {
+  @include mq('md') {
+    content: "";
+    background-image: url('../images/common/price_fish.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: rem(437);
+    height: rem(201);
+    bottom: rem(60);
+    left: rem(100);
+  }
+}
+
+.price__section__header {
+  margin-bottom: rem(26);
+  @include mq('md') {
+    margin-bottom: rem(40);
+  }
+}
+
+.price__contents {
+  @include mq('md') {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: rem(93);
+    margin-bottom: rem(80);
+  }
+}
+
+.price__image__sp {
+  margin-bottom: rem(40);
+}
+
+.price__image__pc {
+  width: rem(492);
+}
+
+.price__tables {
+  @include mq('md') {
+    width: rem(492);
+  }
+}
+
+.price__table__title {
+  font-size: rem(16);
+  line-height: calc(rem(24) / rem(16));
+  font-weight: $bold;
+  padding-bottom: rem(4);
+  position: relative;
+}
+
+.price__table__title::after {
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $color-gr;
+  border-radius: rem(5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.price__table__wrap {
+  font-size: rem(14);
+  line-height: calc(rem(24) / rem(14));
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: rem(40);
+  @include mq('md') {
+    font-size: rem(16);
+    line-height: calc(rem(24) / rem(16));
+  }
+}
+
+.price__text {
+  margin-top: rem(8);
+}
+
+.price__money {
+  text-align: right;
+  margin-top: rem(8);
+}

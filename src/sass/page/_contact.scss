@@ -1,0 +1,159 @@
+@use "global" as *;
+.contact {
+  padding: rem(80) 0 rem(100);
+  position: relative;
+  @include mq('md') {
+    position: relative;
+    padding: rem(140) 0 rem(160);
+  }
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  top: rem(54);
+  right: rem(15);
+  width: rem(109);
+  height: 100%;
+  background: url('../images/common/contact_fish_sp.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mq('md') {
+    position: absolute;
+    top: rem(100);
+    right: rem(50);
+    width: rem(301);
+    background: url('../images/common/contact_fish.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.contact__wrap {
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(80) 0 rem(67);
+    box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+}
+
+.contact__company {
+  padding: 0 rem(25);
+  margin-bottom: rem(40);
+  @include mq('md') {
+    padding: 0 rem(82) 0 rem(50);
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+.contact__company::after {
+  @include mq('md') {
+    content: "";
+    width: rem(1);
+    height: 100%;
+    background: $color-gr;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.contact__company__logo__wrap {
+  position: relative;
+}
+
+.contact__company__logo__wrap::before {
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $color-gr;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+  @include mq('md') {
+    box-shadow: none;
+  }
+}
+
+.contact__company__logo {
+  width: rem(174);
+  margin: 0 auto;
+  @include mq('md') {
+    width: rem(200);
+    padding-bottom: rem(8);
+  }
+}
+
+.contact__company__details {
+  @include mq('md') {
+    padding-top: rem(24);
+    display: flex;
+    gap: rem(21);
+  }
+}
+
+.contact__company__location {
+  padding: rem(16) 0;
+  text-align: center;
+  @include mq('md') {
+    text-align-last: left;
+    padding: 0;
+    min-width: rem(146);
+  }
+}
+
+.contact__company__address {
+  font-size: rem(16);
+  line-height: 1.7;
+  text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
+}
+
+.contact__company__map iframe {
+  box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  aspect-ratio: 16/9;
+  @include mq('md') {
+    box-shadow: none;
+  }
+}
+
+/* Contact Area
+------------------------------------------------------*/
+.contact__detail {
+  @include mq('md') {
+    padding: 0 rem(112) 0 rem(81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.contact__section__header .contact__header__title {
+  @include mq('md') {
+    line-height: 0.7;
+  }
+}
+
+.contact__text {
+  font-size: rem(14);
+  line-height: calc(rem(18) / rem(14));
+  color: $color-gr;
+  text-align: center;
+  text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
+  margin-bottom: rem(40);
+  @include mq('md') {
+    text-shadow: none;
+  }
+}
+
+.contact_button_wrap .button::after{
+  box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+  @include mq('md') {
+    box-shadow: none;
+  }
+}
