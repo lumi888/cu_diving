@@ -53,6 +53,7 @@
   
   @include mq('md') {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: rem(40);
   }
