@@ -22,14 +22,16 @@ const swiperKV = new Swiper('.swiper_kv', {
 
 const swiperCam = new Swiper('.swiper_campaign', {
   loop: false,
-  speed: 1500, // 少しゆっくり(デフォルトは300)
-  autoplay: { // 自動再生
-    delay: 1500, // 1.5秒後に次のスライド
-    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-  },
+  autoHeight: true,
+  spaceBetween: 40,
+  //speed: 1500, // 少しゆっくり(デフォルトは300)
+  //autoplay: { // 自動再生
+    //delay: 1500, // 1.5秒後に次のスライド
+    //disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+  //},
   // Optional parameters
 
-  slidesPerView: 1.29,
+  slidesPerView: 1.2,
   breakpoints: {
     // 600px以上の場合
     600: {
@@ -40,7 +42,7 @@ const swiperCam = new Swiper('.swiper_campaign', {
     },
     // 768px以上の場合
     1440: {
-      slidesPerView: 3.8
+      slidesPerView: 3.4161676647
     }
   },
   

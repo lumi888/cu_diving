@@ -16,23 +16,62 @@
   }
 }
 
-.campaign_cards {
+.campaign__inner {
+  display: flex;
+  flex-direction: column;
+  //overflow: hidden;
+}
+
+.campaign__cards {
   margin-left: rem(15);
   position: relative;
+
+  margin-right: calc(50% - 50vw);
   @include mq('md') {
-    margin-left: rem(180);
+
   }
 }
 
 .campaign_card {
   margin-right: rem(24);
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   @include mq('md') {
     margin-right: rem(40);
   }
 }
 
+.campaign__card__aside img {
+  aspect-ratio: 280 / 188;
+  object-fit: cover;
+  @include mq('md') {
+    aspect-ratio: 333 / 223;
+  }
+}
+
+.campaign__card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.campaign__card__header {
+  text-align: left;
+  border-bottom: rem(1) solid  $color-gr;
+  overflow: hidden;
+  box-shadow: 0 rem(10) rem(10) rem(-10) rgba(0, 0, 0, 0.2);
+
+  flex-grow: 1;
+}
+
 .campaign__card__description {
   margin-bottom: rem(0.5);
+}
+
+.swiper_campaign {
+  padding-bottom: rem(40);
+  @include mq('md') {
+    padding-bottom: rem(80);
+  }
 }
 
 .swiper-button-prev,
@@ -49,7 +88,7 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    left: 66%;
+    left: rem(838);
   }
 }
 
@@ -59,7 +98,7 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    right: 14.5%;
+    right: rem(180);
   }
 }
 

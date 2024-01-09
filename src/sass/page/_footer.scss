@@ -68,9 +68,9 @@
   }
 }
 
-.footer__nav-right {
+.footer__nav-left {
   @include mq('md') {
-    margin-left: rem(26);    
+    margin-right: rem(26);    
   }
 }
 

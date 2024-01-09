@@ -10,10 +10,12 @@
   font-family: $en-base-font-family;
   line-height: calc(40 / 32);
   color: $color-bl;
+  margin-bottom: rem(4);
 
   @include mq('md') {
     font-size: rem(40);
     line-height: calc(40 / 40);
+    margin-bottom: rem(8);
   }
 }
 
@@ -26,10 +28,6 @@
   font-family: $jp-base-font-family;
   line-height: calc(18 / 12);
   color: $color-gr;
-  margin-top: rem(4);
-  @include mq('md') {
-    margin-top: rem(8);
-  }
 }
 
 .contact__section__header {

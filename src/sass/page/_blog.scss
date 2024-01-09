@@ -33,7 +33,7 @@
     background-size: contain;
     position: absolute;
     width: rem(437);
-    height: 100%;
+    height: rem(201);
     top: rem(24);
     left: rem(100);
   }
@@ -67,7 +67,7 @@
 .blog__cards {
   @include mq('md') {
     display: flex;
-    gap: rem(40);
+    flex-wrap: wrap;
     margin-bottom: rem(40);
   }
 }
@@ -76,12 +76,34 @@
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: rem(32);
   background: #fff;
+  @include mq('md') {
+    max-width: calc(33.3333% - rem(40) * 2 / 3);
+    width: 100%;
+    margin-right: rem(40);
+    transition: 0.3s ease;
+  }
 }
 
+.blog__card:hover {
+  @include mq('md') {
+    opacity: 0.8;
+  }
+}
+
+.blog__card:nth-child(3n + 3) {
+  margin-right: 0;
+}
 
 .blog__card__aside {
   padding: rem(16) rem(16) 0;
-  
+}
+
+.blog__card__aside img {
+  aspect-ratio: 301 / 201;
+  object-fit: cover;
+  @include mq('md') {
+    max-width: rem(301);
+  }
 }
 
 .blog__card__body {
