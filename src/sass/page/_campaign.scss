@@ -28,16 +28,26 @@
 
   margin-right: calc(50% - 50vw);
   @include mq('md') {
-
   }
 }
 
-.campaign_card {
+.campaign__card {
   margin-right: rem(24);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+
   @include mq('md') {
     margin-right: rem(40);
   }
+}
+
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: 100%;
+}
+
+.campaign__card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .campaign__card__aside img {
@@ -49,8 +59,10 @@
 }
 
 .campaign__card__body {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 
@@ -88,7 +100,8 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    left: rem(838);
+    //left: rem(838);
+    left: 66%;
   }
 }
 
@@ -98,7 +111,8 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    right: rem(180);
+    //right: rem(180);
+    left: 79%;
   }
 }
 
