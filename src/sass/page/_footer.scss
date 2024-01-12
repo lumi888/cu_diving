@@ -9,10 +9,12 @@
 }
 
 .footer__head {
+  max-width: rem(600);
+  margin: auto;
   @include mq('md') {
     display: flex;
     align-items: center;
-    margin-bottom: rem(7);
+    margin: 0 0 rem(7);
   }
 }
 

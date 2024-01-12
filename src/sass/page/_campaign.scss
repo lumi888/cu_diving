@@ -25,16 +25,13 @@
 .campaign__cards {
   margin-left: rem(15);
   position: relative;
-
   margin-right: calc(50% - 50vw);
-  @include mq('md') {
-  }
 }
 
 .campaign__card {
   margin-right: rem(24);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
-
+  height: 100%;
   @include mq('md') {
     margin-right: rem(40);
   }
@@ -42,6 +39,12 @@
 
 .swiper-autoheight, .swiper-autoheight .swiper-slide {
   height: 100%;
+}
+
+/* カード内の高さを揃える*/
+.campaign .swiper-container,
+.campaign .swiper-slide {
+    height: auto;
 }
 
 .campaign__card__link {

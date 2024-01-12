@@ -3,8 +3,23 @@
 .about {
   margin-top: rem(40);
   padding-bottom: rem(75);
+  position: relative;
   @include mq('md') {
     margin-top: rem(120);
+  }
+}
+
+.about::after {
+  @include mq('md') {
+    content: "";
+    display: block;
+    background-image: url('../images/common/about_sea-anemone.png');
+    background-size: contain;
+    width: rem(194);
+    height: rem(181);
+    position: absolute;
+    bottom: rem(24);
+    right: rem(80);
   }
 }
 
@@ -17,24 +32,9 @@
 
 .about__contents {
   margin-bottom: rem(40);
-  @include mq('md') {
-    position: relative;
-  }
+
 }
 
-.about__contents::after {
-  @include mq('md') {
-    content: "";
-    display: block;
-    background-image: url('../images/common/about_sea-anemone.png');
-    background-size: contain;
-    width: rem(194);
-    height: rem(181);
-    position: absolute;
-    bottom: rem(-91);
-    right: rem(-96);
-  }
-}
 
 .about__bg {
   max-width: rem(375);
