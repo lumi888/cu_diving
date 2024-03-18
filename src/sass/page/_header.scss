@@ -1,5 +1,9 @@
 @use "global" as *;
 
+body.hidden {
+  overflow: hidden;
+}
+
 .header {
   background: rgba(13,41,54,0.68);
   position: fixed;
@@ -30,6 +34,7 @@
 
 .header__logo {
   width: rem(102);
+  z-index: 1;
   @include mq('md') {
     width: rem(133);
   }
@@ -42,6 +47,7 @@
   width: rem(32);
   height: rem(24);
   cursor: pointer; 
+  z-index: 1;
 }
 
 .header__btn-sp span {
@@ -88,7 +94,8 @@
 .header__nav-sp {
   //display: none;
   position: absolute;
-  top: rem(80);
+  //top: rem(80);
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -96,6 +103,8 @@
   background: $color-gr;
   transform: translateX(100%);
   transition: ease .3s;
+  overflow: scroll;
+  padding-top: rem(80);
 }
 .header__inner.active {
   background: $color-gr;
@@ -152,6 +161,7 @@
     font-family: $en-base-font-family;
     display: flex;
     align-items: center;
+    gap: rem(40);
   }
 }
 
@@ -197,11 +207,5 @@
     line-height: calc(rem(15) / rem(10));
     font-family: $jp-base-font-family;
     padding-top: rem(4);
-  }
-}
-
-.header__list-pc:not(:last-child) {
-  @include mq('md') {
-    margin-right: rem(40);
   }
 }

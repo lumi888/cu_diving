@@ -1,18 +1,21 @@
 const logo = document.querySelector('.header__inner');
 const ham = document.querySelector('#js-headerBtn'); //js-hamburgerの要素を取得し、変数hamに格納
 const nav = document.querySelector('#js-nav'); //js-navの要素を取得し、変数navに格納
+const body =document.body;
+
 ham.addEventListener('click', function () { //ハンバーガーメニューをクリックしたら
   logo.classList.toggle('active'); 
   ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
   nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
+  body.classList.toggle('hidden')
 });
-
 
 
 const swiperKV = new Swiper('.swiper_kv', {
   // Optional parameters
   loop: true,
   speed: 1500, // 少しゆっくり(デフォルトは300)
+  effect: 'fade',
   autoplay: { // 自動再生
     delay: 1500, // 1.5秒後に次のスライド
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
@@ -21,7 +24,7 @@ const swiperKV = new Swiper('.swiper_kv', {
 
 
 const swiperCam = new Swiper('.swiper_campaign', {
-  loop: false,
+  loop: true,
   spaceBetween: 40,
   speed: 1500, // 少しゆっくり(デフォルトは300)
   autoplay: { // 自動再生

@@ -1,19 +1,18 @@
 @use "global" as *;
 
 .campaign {
-  padding-top: rem(40);
   padding-bottom: rem(40);
   @include mq('md') {
-    padding-top: rem(120);
     padding-bottom: rem(20);
   } 
 }
 
-.campaign__section-header {
-  margin-bottom: rem(25.55);
+.l-campaign {
+  margin-top: rem(40);
+
   @include mq('md') {
-    margin-bottom: rem(40);
-  }
+    margin-top: rem(120);
+  } 
 }
 
 .campaign__inner {
@@ -23,9 +22,13 @@
 }
 
 .campaign__cards {
+  margin-top: rem(25.55);
   margin-left: rem(15);
   position: relative;
   margin-right: calc(50% - 50vw);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
 }
 
 .campaign__card {
@@ -83,9 +86,9 @@
 }
 
 .swiper_campaign {
-  padding-bottom: rem(40);
+  padding-bottom: rem(10);
   @include mq('md') {
-    padding-bottom: rem(80);
+    padding-bottom: rem(10);
   }
 }
 
@@ -153,4 +156,11 @@
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
   content: "next";
+}
+
+.button__wrap-campaign {
+  margin-top: rem(30);
+  @include mq('md') {
+    margin-top: rem(70);
+  }
 }

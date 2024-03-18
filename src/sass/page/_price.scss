@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .price {
+  margin-top: rem(80);
   padding: rem(80) 0;
   background: $color-lgr;
   @include mq('md') {
+    margin-top: rem(140);
     padding: rem(100) 0;
     position: relative;
   }
@@ -24,17 +26,13 @@
   }
 }
 
-.price__section__header {
-  margin-bottom: rem(26);
-  @include mq('md') {
-    margin-bottom: rem(40);
-  }
-}
-
 .price__contents {
+  margin-top: rem(40);
   display: flex;
   flex-direction: column;
+
   @include mq('md') {
+    margin-top: rem(40);
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -78,13 +76,17 @@
   }
 }
 
+.price__table:not(:first-of-type) {
+  margin-top: rem(40);
+}
+
 .price__table__title {
   font-size: rem(16);
   line-height: calc(rem(24) / rem(16));
   font-weight: $bold;
   padding-bottom: rem(4);
   position: relative;
-  margin-bottom: 0.5rem;
+  
 }
 
 .price__table__title::after {
@@ -99,25 +101,33 @@
 }
 
 .price__table__wrap {
+  margin-top: 0.5rem;
   font-size: rem(14);
   line-height: calc(rem(24) / rem(14));
   display: grid;
   grid-template-columns: 3fr 1fr;
-  margin-bottom: rem(40);
+
   @include mq('md') {
     font-size: rem(16);
     line-height: calc(rem(24) / rem(16));
   }
 }
 
-.price__text:not(:last-of-type) {
-  margin-bottom: rem(8);
+.price__text:not(:first-of-type) {
+  margin-top: rem(8);
 }
 
-.price__money:not(:last-of-type) {
-  margin-bottom: rem(8);
+.price__money:not(:first-of-type) {
+  margin-top: rem(8);
 }
 
 .price__money {
   text-align: right;
+}
+
+.button__wrap-price {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
 }
