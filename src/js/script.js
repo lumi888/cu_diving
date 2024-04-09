@@ -12,7 +12,6 @@ ham.addEventListener('click', function () { //ハンバーガーメニューを�
 
 
 const swiperKV = new Swiper('.swiper_kv', {
-  // Optional parameters
   loop: true,
   speed: 1500, // 少しゆっくり(デフォルトは300)
   effect: 'fade',
