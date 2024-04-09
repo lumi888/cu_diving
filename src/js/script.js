@@ -24,7 +24,7 @@ const swiperKV = new Swiper('.swiper_kv', {
 
 const swiperCam = new Swiper('.swiper_campaign', {
   loop: true,
-  spaceBetween: 40,
+  //spaceBetween: 40,
   speed: 1500, // 少しゆっくり(デフォルトは300)
   autoplay: { // 自動再生
     delay: 1500, // 1.5秒後に次のスライド
