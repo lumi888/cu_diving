@@ -45,7 +45,7 @@
   }
 }
 
-.blog__accent {
+.blog__title-w::first-letter {
   @include mq('md') {
     color: $color-wh;
   }

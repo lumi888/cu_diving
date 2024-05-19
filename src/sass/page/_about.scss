@@ -17,7 +17,7 @@
     width: rem(194);
     height: rem(181);
     position: absolute;
-    bottom: 0;
+    bottom: rem(-50);
     right: calc(50% - min(48.5vw, 39.8rem));
   }
 }
@@ -27,7 +27,7 @@
 
   @include mq('md') {
     margin-top: rem(40);
-    aspect-ratio: 1080 / 767;
+    aspect-ratio: 1080 / 661;
     position: relative;
   }
 }
@@ -65,15 +65,13 @@
 .about__sentences {
   margin-top: rem(40);
 
-
   @include mq('md') {
     margin-top: 0;
-    padding-top: rem(200);
-    padding-bottom: rem(219);
     display: flex;
     justify-content: center;
     position: absolute;
-    top: rem(10);
+    top: rem(200);
+    left: rem(12);
   }
 }
 
@@ -87,7 +85,6 @@
     font-size: rem(80);
     line-height: calc(rem(100) / rem(80));
     color: $color-wh;
-    margin-left: 12rem;
     margin-bottom: 0;
     min-width: rem(400);
   }

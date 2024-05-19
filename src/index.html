@@ -27,9 +27,9 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <script src="./assets/js/jquery.inview.min.js" defer></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script  defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -100,14 +100,22 @@
       </div>
       <div class="swiper swiper_kv">
         <div class="swiper-wrapper">
-          <div class="swiper-slide u-mobile"><img src="./assets/images/common/fv_sp_1.jpg" alt=""></div>
-          <div class="swiper-slide u-mobile"><img src="./assets/images/common/fv_sp_2.jpg" alt=""></div>
-          <div class="swiper-slide u-mobile"><img src="./assets/images/common/fv_sp_3.jpg" alt=""></div>
-          <div class="swiper-slide u-mobile"><img src="./assets/images/common/fv_sp_4.jpg" alt=""></div>
-          <div class="swiper-slide u-desktop"><img src="./assets/images/common/fv_pc_1.jpg" alt=""></div>
-          <div class="swiper-slide u-desktop"><img src="./assets/images/common/fv_pc_2.jpg" alt=""></div>
-          <div class="swiper-slide u-desktop"><img src="./assets/images/common/fv_pc_3.jpg" alt=""></div>
-          <div class="swiper-slide u-desktop"><img src="./assets/images/common/fv_pc_4.jpg" alt=""></div>
+          <picture class="swiper-slide">
+            <source media="(min-width: 768px)" srcset="./assets/images/common/fv_pc_1.jpg">
+            <img src="./assets/images/common/fv_sp_1.jpg" alt="">
+          </picture>
+          <picture class="swiper-slide">
+            <source media="(min-width: 768px)" srcset="./assets/images/common/fv_pc_2.jpg">
+            <img src="./assets/images/common/fv_sp_2.jpg" alt="">
+          </picture>
+          <picture class="swiper-slide">
+            <source media="(min-width: 768px)" srcset="./assets/images/common/fv_pc_3.jpg">
+            <img src="./assets/images/common/fv_sp_3.jpg" alt="">
+          </picture>
+          <picture class="swiper-slide">
+            <source media="(min-width: 768px)" srcset="./assets/images/common/fv_pc_4.jpg">
+            <img src="./assets/images/common/fv_sp_4.jpg" alt="">
+          </picture>
         </div>
       </div>
     </section><!-- /.kv-->
@@ -115,7 +123,7 @@
     <section id="campaign" class="campaign l-campaign">
       <div class="inner campaign__inner">
         <div class="campaign__section-header section__header">
-          <p class="section__header__title"><span class="section__header__accent">C</span>ampaign</p>
+          <p class="section__header__title">Campaign</p>
           <h2 class="section__header__subtitle">キャンペーン</h2>
         </div>
   
@@ -305,7 +313,7 @@
     <section class="about">
       <div class="section__inner inner">
         <div class="about__section__header section__header">
-          <p class="section__header__title"><span class="section__header__accent">A</span>bout us</p>
+          <p class="section__header__title">About us</p>
           <h2 class="section__header__subtitle">私たちについて</h2>
         </div>
         <div class="about__contents">
@@ -334,7 +342,7 @@
     <section class="information">
       <div class="section__inner inner">
         <div class="section__header information__header">
-          <h2 class="section__header__title"><span class="section__header__accent">I</span>nformation</h2>
+          <h2 class="section__header__title">Information</h2>
           <p class="section__header__subtitle">ダイビング情報</p>
         </div>
         <div class="information__contents">
@@ -361,7 +369,7 @@
     <section class="blog">
       <div class="section__inner inner">
         <div class="section__header blog__header">
-          <p class="section__header__title blog__title-w"><span class="section__header__accent blog__accent">B</span>log</p>
+          <p class="section__header__title blog__title-w">Blog</p>
           <h2 class="section__header__subtitle blog__subtitle-w">ブログ</h2>
         </div>
 
@@ -435,7 +443,7 @@
     <section class="voice">
       <div class="section__inner inner">
         <div class="section__header voice__section__header">
-          <p class="section__header__title"><span class="section__header__accent">V</span>oice</p>
+          <p class="section__header__title">Voice</p>
           <h2 class="section__header__subtitle">お客様の声</h2>
         </div>
         <div class="voice__cards">
@@ -496,7 +504,7 @@
     <section class="price">
       <div class="section__inner inner">
         <div class="section__header price__section__header">
-          <p class="section__header__title"><span class="section__header__accent">P</span>rice</p>
+          <p class="section__header__title">Price</p>
           <h2 class="section__header__subtitle">料金一覧</h2>
         </div>
         <div class="price__contents">
@@ -597,7 +605,7 @@
 
           <div class="contact__detail">
             <div class="section__header contact__section__header">
-              <p class="section__header__title contact__header__title"><span class="section__header__accent">C</span>ontact</p>
+              <p class="section__header__title contact__header__title">Contact</p>
               <h2 class="section__header__subtitle contact__header__subtitle">お問い合せ</h2>
             </div>
             <p class="contact__text">
