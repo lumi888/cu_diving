@@ -83,7 +83,7 @@
 }
 
 .button__link:hover .button__arrow,
-.button_link:hover .button__arrow::after {
+.button__link:hover .button__arrow::after {
   background-color: $color-gr;
 }
 
