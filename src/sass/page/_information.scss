@@ -19,7 +19,7 @@
   }
 }
 
-.information__photo__wrap {
+.information__photo-wrap {
   @include mq('md') {
     flex-shrink: 0;
   }
@@ -61,6 +61,6 @@
   margin-top: rem(6);
 }
 
-.button__wrap-information {
+.button-information {
   margin-top: rem(40);
 }

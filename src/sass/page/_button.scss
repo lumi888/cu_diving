@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.button__wrap {
+.button {
   text-align: center;
   padding-bottom: rem(5);
 }
 
-.button{
+.button__link{
   color: $color-wh;
   background: $color-gr;
   border: rem(1) solid $color-gr;
@@ -22,7 +22,7 @@
 }
 
 //左から右スライダーアニメーション
-.button::before {
+.button__link::before {
   content: '';
   position: absolute;
   top: 0;
@@ -36,13 +36,13 @@
   z-index: -1;
 }
 
-.button:hover{
+.button__link:hover{
   color: $color-gr;
 }
 
 
 //ずらした枠
-.button::after {
+.button__link::after {
   content: '';
   position: absolute;
   top: rem(4);
@@ -82,11 +82,11 @@
   transition: 0.3s background-color;
 }
 
-.button:hover .button__arrow,
-.button:hover .button__arrow::after {
+.button__link:hover .button__arrow,
+.button_link:hover .button__arrow::after {
   background-color: $color-gr;
 }
 
-.button:hover::before{
+.button__link:hover::before{
   transform: scale(1, 1);
 }

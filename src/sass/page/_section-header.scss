@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.section__header {
+.section-header {
   text-align: center;
 }
 
-.section__header__title {
+.section-header__title {
   font-size: rem(32);
   font-weight: $regular;
   font-family: $en-base-font-family;
@@ -17,11 +17,11 @@
   }
 }
 
-.section__header__title::first-letter {
+.section-header__title::first-letter {
   color: $color-gr;
 }
 
-.section__header__subtitle {
+.section-header__subtitle {
   font-size: rem(12);
   font-family: $jp-base-font-family;
   line-height: calc(18 / 12);
@@ -33,7 +33,7 @@
   }
 }
 
-.contact__header__title {
+.contact__header-title {
   font-size: rem(80);
   line-height: 0.75;
   text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
@@ -43,7 +43,7 @@
   }
 }
 
-.contact__header__subtitle {
+.contact__header-subtitle {
   text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
   margin-top: rem(8);
   @include mq('md') {

@@ -64,7 +64,7 @@
 }
 
 
-.voice__card__head {
+.voice__card-head {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -75,7 +75,7 @@
   }
 }
 
-.voice__head__text {
+.voice__head-text {
   margin-right: rem(13);
   @include mq('md') {
     margin-top: rem(22);
@@ -84,7 +84,7 @@
   }
 }
 
-.voice__head__info {
+.voice__head-info {
   @include mq('md') {
     display: flex;
     align-items: center;
@@ -92,12 +92,12 @@
   }
 }
 
-.voice__head__personal {
+.voice__head-personal {
   font-size: rem(12);
   line-height: calc(rem(18) / rem(12));
 }
 
-.voice__head__tag {
+.voice__head-tag {
   display: inline-block;
   font-size: rem(12);
   line-height: calc(rem(22) / rem(12));
@@ -110,7 +110,7 @@
   }
 }
 
-.voice__head__title {
+.voice__head-title {
   font-size: rem(16);
   position: relative;
   @include mq('md') {
@@ -118,7 +118,7 @@
   }
 }
 
-.voice__head__title::after {
+.voice__head-title::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -129,7 +129,7 @@
   left: 0;
 }
 
-.voice__head__image {
+.voice__head-image {
   padding-top: rem(5);
   @include mq('md') {
     flex-shrink: 1.2;
@@ -138,27 +138,27 @@
   }
 }
 
-.voice__head__image img {
+.voice__head-image img {
   @include mq('md') {
     aspect-ratio:  9 / 7;
     object-fit: cover;
   }
 }
 
-.voice__card__footer {
+.voice__card-footer {
   @include mq('md') {
     margin-top: rem(40);
   }
   
 }
-.voice__footer__text {
+.voice__footer-text {
   @include mq('md') {
     font-size: rem(16);
     line-height: calc(rem(24) / rem(16));
   }
 }
 
-.button__wrap-voice {
+.button-voice {
   @include mq('md') {
     margin-top: rem(80);
   }

@@ -17,7 +17,7 @@
     width: rem(194);
     height: rem(181);
     position: absolute;
-    bottom: rem(-50);
+    bottom: rem(-90);
     right: calc(50% - min(48.5vw, 39.8rem));
   }
 }
@@ -32,7 +32,7 @@
   }
 }
 
-.about__images__left {
+.about__images-left {
   position: relative;
   width: rem(128);
   left: 0;
@@ -45,7 +45,7 @@
   }
 }
 
-.about__images__right {
+.about__images-right {
   position: relative;
   width: rem(281);
   right: 0;
@@ -61,7 +61,6 @@
   }
 }
 
-
 .about__sentences {
   margin-top: rem(40);
 
@@ -71,11 +70,11 @@
     justify-content: center;
     position: absolute;
     top: rem(200);
-    left: rem(12);
+    left: rem(199);
   }
 }
 
-.about__maintext {
+.about__main-text {
   font-size: rem(40);
   font-family: $en-base-font-family;
   color: $color-gr;
@@ -90,7 +89,7 @@
   }
 }
 
-.about__text__wrap {
+.about__text-wrap {
   display: flex;
   flex-direction: column;
   @include mq('md') {
@@ -108,7 +107,7 @@
   }
 }
 
-.button__wrap-about {
+.button-about {
   margin-top: rem(50);
 
   @include mq('md') {

@@ -19,11 +19,10 @@
 .campaign__inner {
   display: flex;
   flex-direction: column;
-  //overflow: hidden;
 }
 
 .campaign__cards {
-  margin-top: rem(25.55);
+  margin-top: rem(40);
   margin-left: rem(15);
   position: relative;
   margin-right: calc(50% - 50vw);
@@ -51,13 +50,13 @@
     height: auto;
 }
 
-.campaign__card__link {
+.campaign__card-link {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.campaign__card__aside img {
+.campaign__card-aside img {
   aspect-ratio: 280 / 188;
   object-fit: cover;
   @include mq('md') {
@@ -65,7 +64,7 @@
   }
 }
 
-.campaign__card__body {
+.campaign__card-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -73,20 +72,19 @@
 }
 
 
-.campaign__card__header {
+.campaign__card-header {
   text-align: left;
   border-bottom: rem(1) solid  $color-gr;
   overflow: hidden;
   box-shadow: 0 rem(10) rem(10) rem(-10) rgba(0, 0, 0, 0.2);
-
   flex-grow: 1;
 }
 
-.campaign__card__description {
+.campaign__card-description {
   margin-bottom: rem(0.5);
 }
 
-.swiper_campaign {
+.campaign__swiper {
   padding-bottom: rem(10);
   @include mq('md') {
     padding-bottom: rem(10);
@@ -159,7 +157,7 @@
   content: "next";
 }
 
-.button__wrap-campaign {
+.button-campaign {
   margin-top: rem(30);
   @include mq('md') {
     margin-top: rem(70);

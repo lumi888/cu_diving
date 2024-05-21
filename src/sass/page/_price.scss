@@ -47,24 +47,24 @@
   }
 }
 
-.price__image__sp {
+.price__image-sp {
   margin-bottom: rem(40);
   align-self: center;
 }
 
-.price__image__sp img {
+.price__image-sp img {
   max-width: rem(345);
   aspect-ratio: 345 / 227;
   object-fit: cover;
 }
 
-.price__image__pc {
+.price__image-pc {
   @include mq('md') {
     max-width: rem(492);
   }
 }
 
-.price__image__pc img {
+.price__image-pc img {
   aspect-ratio: 492 / 746;
   object-fit: cover;
 }
@@ -79,7 +79,7 @@
   margin-top: rem(40);
 }
 
-.price__table__title {
+.price__table-title {
   font-size: rem(16);
   line-height: calc(rem(24) / rem(16));
   font-weight: $bold;
@@ -88,7 +88,7 @@
   
 }
 
-.price__table__title::after {
+.price__table-title::after {
   content: "";
   width: 100%;
   height: rem(1);
@@ -99,7 +99,7 @@
   left: 0;
 }
 
-.price__table__wrap {
+.price__table-wrap {
   margin-top: 0.5rem;
   font-size: rem(14);
   line-height: calc(rem(24) / rem(14));
@@ -112,19 +112,19 @@
   }
 }
 
-.price__text:not(:first-of-type) {
+.price__table-text:not(:first-of-type) {
   margin-top: rem(8);
 }
 
-.price__money:not(:first-of-type) {
+.price__table-money:not(:first-of-type) {
   margin-top: rem(8);
 }
 
-.price__money {
+.price__table-money {
   text-align: right;
 }
 
-.button__wrap-price {
+.button-price {
   margin-top: rem(40);
   @include mq('md') {
     margin-top: rem(80);
