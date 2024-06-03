@@ -35,8 +35,10 @@
   margin-right: rem(24);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   height: 100%;
+  width: rem(240);
   @include mq('md') {
     margin-right: rem(40);
+    width: rem(333);
   }
 }
 

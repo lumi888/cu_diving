@@ -30,6 +30,8 @@ const swiperCam = new Swiper('.campaign__swiper', {
     delay: 1500, // 1.5秒後に次のスライド
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
   },
+  slidesPerView: "auto",
+  /*
   slidesPerView: 1.2,
   breakpoints: {
     // 600px以上の場合
@@ -43,7 +45,7 @@ const swiperCam = new Swiper('.campaign__swiper', {
     1440: {
       slidesPerView: 3.4161676647
     }
-  },
+  },*/
   
   navigation: {
     nextEl: '.swiper-button-next',
