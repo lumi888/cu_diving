@@ -22,7 +22,7 @@ const swiperKV = new Swiper('.kv__swiper', {
 });
 
 
-const swiperCam = new Swiper('.campaign__swiper', {
+const swiperCam = new Swiper('.campaign-cards__swiper', {
   loop: true,
   //spaceBetween: 40,
   speed: 1500, // 少しゆっくり(デフォルトは300)

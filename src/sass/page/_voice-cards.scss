@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.voice-cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(40);
+  
+  @include mq('md') {
+    margin-top: rem(30);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: rem(40);
+  }
+} 
+
+.voice-cards__card {
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+  padding: rem(15) rem(16) rem(24);
+  margin-bottom: rem(40);
+  @include mq('md') {
+    padding: rem(24);
+    margin-bottom: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.price-table__title {
+  font-size: rem(16);
+  line-height: calc(rem(24) / rem(16));
+  font-weight: $bold;
+  padding-bottom: rem(4);
+  position: relative;
+  
+}
+
+.price-table__title::after {
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $color-gr;
+  border-radius: rem(5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.price-table__wrap {
+  margin-top: 0.5rem;
+  font-size: rem(14);
+  line-height: calc(rem(24) / rem(14));
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  @include mq('md') {
+    font-size: rem(16);
+    line-height: calc(rem(24) / rem(16));
+  }
+}
+
+.price-table__text:not(:first-of-type) {
+  margin-top: rem(8);
+}
+
+.price-table__money:not(:first-of-type) {
+  margin-top: rem(8);
+}
+
+.price-table__money {
+  text-align: right;
+}

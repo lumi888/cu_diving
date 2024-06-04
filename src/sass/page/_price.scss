@@ -69,63 +69,9 @@
   object-fit: cover;
 }
 
-.price__tables {
-  @include mq('md') {
-    width: 50%;
-  }
-}
-
-.price__table:not(:first-of-type) {
+.price__button {
   margin-top: rem(40);
-}
-
-.price__table-title {
-  font-size: rem(16);
-  line-height: calc(rem(24) / rem(16));
-  font-weight: $bold;
-  padding-bottom: rem(4);
-  position: relative;
-  
-}
-
-.price__table-title::after {
-  content: "";
-  width: 100%;
-  height: rem(1);
-  background: $color-gr;
-  border-radius: rem(5);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.price__table-wrap {
-  margin-top: 0.5rem;
-  font-size: rem(14);
-  line-height: calc(rem(24) / rem(14));
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-
-  @include mq('md') {
-    font-size: rem(16);
-    line-height: calc(rem(24) / rem(16));
-  }
-}
-
-.price__table-text:not(:first-of-type) {
-  margin-top: rem(8);
-}
-
-.price__table-money:not(:first-of-type) {
-  margin-top: rem(8);
-}
-
-.price__table-money {
-  text-align: right;
-}
-
-.button-price {
-  margin-top: rem(40);
+  text-align: center;
   @include mq('md') {
     margin-top: rem(80);
   }

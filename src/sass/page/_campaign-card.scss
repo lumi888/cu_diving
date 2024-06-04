@@ -1,34 +1,39 @@
 @use "global" as *;
 
-.card {
-  width: rem(280);
-  margin-bottom: rem(40);
-  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.campaign-card__aside img {
+  aspect-ratio: 280 / 188;
+  object-fit: cover;
   @include mq('md') {
-    width: rem(333);
-    margin-bottom: rem(80);
+    aspect-ratio: 333 / 223;
   }
 }
 
-.card__link {
-  display: inline-block;
-}
-
-.card__body {
+.campaign-card__body {
   padding: rem(16) rem(16) rem(24);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   @include mq('md') {
     padding: rem(24) rem(16) rem(40);
   }
 }
 
-.card__header {
+.campaign-card__header {
   text-align: left;
   border-bottom: rem(1) solid  $color-gr;
   overflow: hidden;
   box-shadow: 0 rem(10) rem(10) rem(-10) rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
 }
 
-.card__tag {
+.campaign-card__tag {
   font-size: rem(12);
   line-height: calc(rem(22) / rem(12));
   color: $color-gr;
@@ -41,7 +46,7 @@
   }
 }
 
-.card__title {
+.campaign-card__title {
   line-height: calc(rem(24) / rem(16));
   color: $color-bl;
   font-weight: $bold;
@@ -49,7 +54,7 @@
 }
 
 
-.card__footer {
+.campaign-card__footer {
   padding: rem(8) rem(18) 0;
   text-align: center;
   @include mq('md') {
@@ -57,7 +62,7 @@
   }
 }
 
-.card__description {
+.campaign-card__description {
   font-size: rem(14);
   line-height: calc(rem(24) / rem(14));
   margin-bottom: rem(8);
@@ -67,13 +72,13 @@
   }
 }
 
-.card__price {
+.campaign-card__price {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.card__regular {
+.campaign-card__regular {
   font-size: rem(20);
   line-height: 1;
   font-weight: $bold;
@@ -84,7 +89,7 @@
   }
 }
 
-.card__regular::after {
+.campaign-card__regular::after {
   content: '';
   width: 100%;
   height: rem(3);
@@ -95,7 +100,7 @@
   left: 0;
 }
 
-.card__discount {
+.campaign-card__discount {
   font-size: rem(32);
   line-height: 1;
   font-weight: $bold;

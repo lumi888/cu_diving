@@ -31,14 +31,11 @@
   }
 }
 
-.campaign__card {
-  margin-right: rem(24);
-  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
-  height: 100%;
-  width: rem(240);
+.campaign__button {
+  margin-top: rem(30);
+  text-align: center;
   @include mq('md') {
-    margin-right: rem(40);
-    width: rem(333);
+    margin-top: rem(70);
   }
 }
 
@@ -50,47 +47,6 @@
 .campaign .swiper-container,
 .campaign .swiper-slide {
     height: auto;
-}
-
-.campaign__card-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.campaign__card-aside img {
-  aspect-ratio: 280 / 188;
-  object-fit: cover;
-  @include mq('md') {
-    aspect-ratio: 333 / 223;
-  }
-}
-
-.campaign__card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-
-.campaign__card-header {
-  text-align: left;
-  border-bottom: rem(1) solid  $color-gr;
-  overflow: hidden;
-  box-shadow: 0 rem(10) rem(10) rem(-10) rgba(0, 0, 0, 0.2);
-  flex-grow: 1;
-}
-
-.campaign__card-description {
-  margin-bottom: rem(0.5);
-}
-
-.campaign__swiper {
-  padding-bottom: rem(10);
-  @include mq('md') {
-    padding-bottom: rem(10);
-  }
 }
 
 .swiper-button-prev,
@@ -107,7 +63,6 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    //left: rem(838);
     left: 66%;
   }
 }
@@ -118,7 +73,6 @@
     display: block;
     position: absolute;
     top: rem(-85);
-    //right: rem(180);
     left: 79%;
   }
 }
@@ -157,11 +111,4 @@
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
   content: "next";
-}
-
-.button-campaign {
-  margin-top: rem(30);
-  @include mq('md') {
-    margin-top: rem(70);
-  }
 }

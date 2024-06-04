@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.price-tables {
+  @include mq('md') {
+    width: 50%;
+  }
+}
+
+.price-tables__table:not(:first-of-type) {
+  margin-top: rem(40);
+}
