@@ -21,13 +21,13 @@
   color: $color-gr;
 }
 
-.section-header__title-w {
+.section-header__title--w {
   @include mq('md') {
     color: $color-wh;
   }
 }
 
-.section-header__title-w::first-letter {
+.section-header__title--w::first-letter {
   @include mq('md') {
     color: $color-wh;
   }
@@ -45,13 +45,13 @@
   }
 }
 
-.section-header__subtitle-w {
+.section-header__subtitle--w {
   @include mq('md') {
     color: $color-wh;
   }
 }
 
-.section-header__title-l {
+.section-header__title--large {
   font-size: rem(80);
   line-height: 0.75;
   text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
@@ -62,7 +62,7 @@
   }
 }
 
-.section-header__subtitle-l {
+.section-header__subtitle--large {
   text-shadow: rem(4) rem(4) rem(4) rgba(0, 0, 0, 0.25);
   margin-top: rem(8);
   @include mq('md') {
